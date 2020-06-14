@@ -10,21 +10,23 @@ The speaker function should return the string in all uppercase letters only by i
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  let word = word;
-  let output = word.toUppercase();
-  console.log(output);
+  let string = word;
+  let output = string.toUpperCase();
   return output;
 };
 
 
+
 const speaker = (message, callback) => {
-  // Solution code here...
+  let output = callback(message);
+  return output;
 };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
-Write a function named addValues that takes in an array and a value and pushes the value into the array. This function does not need a return statement.
+Write a function named addValues that takes in an array 
+and a value and pushes the value into the array. This function does not need a return statement.
 
 Then, write a function named addNumbers that takes in four arguments:
   - A number to be added to an array
@@ -32,17 +34,21 @@ Then, write a function named addNumbers that takes in four arguments:
   - The number of times the number should be added
   - A callback function to use to add the numbers to the array (Hint: you already defined it)
 
-Within the addNumbers function, invoke the callback function as many times as necessary, based on the third argument of the addNumbers function.
+Within the addNumbers function, invoke the callback function as 
+many times as necessary, based on the third argument of the addNumbers function.
 
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (var i = 0; i < times; i++){
+    callback(arr, num);
+  }
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -59,11 +65,18 @@ The inventory is formatted like this:
   { name: 'blueberries', available: false }
 ]
 
-This function should use forEach to populate your grocery list based on the store's inventory. If the item is available, add it to your list. Return the final list.
+This function should use forEach to populate your grocery list based on the store's inventory. 
+If the item is available, add it to your list. Return the final list.
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+  let availableArr = [];
+  availableItems.forEach(item =>{
+    if (item.available === true){
+      availableArr.push(item.name);
+    };
+  })
+  return availableArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,7 +111,6 @@ const fizzbuzz = (arr) => {
   })
 return newArr;
 };
-console.log(newArr);
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
