@@ -8,4 +8,4 @@ Insert a new value into an array while keeping everything in numberical order.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 We used a for loop with array.splice. Inside the for loop we used a conditional statement to compare each element to the target input. 
 ## Solution
-![WhiteBoard]('../../assets/array-shift.jpg)
+![WhiteBoard]('/assets/array-shift.jpg)
