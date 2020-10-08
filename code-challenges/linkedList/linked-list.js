@@ -7,6 +7,17 @@ class LinkedList {
     this.head = null;
   }
 
+
+  prepend(value){
+    let node = new Node(value);
+    if (!this.head) {
+      this.head = node;
+    } else {
+      node.next = this.head;
+      this.head = node;
+    }
+  }
+
   append(value) {
     let node = new Node(value);
 
@@ -23,6 +34,7 @@ class LinkedList {
 
     return this;
   }
+  
 
   includes(value){
     let input = value;
