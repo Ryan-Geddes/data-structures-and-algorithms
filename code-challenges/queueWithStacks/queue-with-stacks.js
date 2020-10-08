@@ -1,17 +1,23 @@
 'use strict';
 
 const util = require('util');
-const LL = require('../linkedList/linked-list');
-let list = new LL();
+const Stack = require('./stacks');
+let stack = new Stack();
 
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
+  }
+}
 
-class PseudoQueue {
+class Queue {
 
-  constructor() {
-    this.container = stack2;
+  constructor(node = null) {
+    this.front = node;
   }
 
-  enqueue(item) {
+  enqueue(value) {
     this.container.push(item);
   }
 
@@ -21,6 +27,10 @@ class PseudoQueue {
 
   peek() {
     this.container.peek();
+  }
+
+  isEmpty(){
+    
   }
 }
 
@@ -52,14 +62,15 @@ class Stack {
 const stack1 = new Stack;
 const stack2 = new Stack;
 
-while (!stack1.isEmpty()){
-  stack2.push(stack1.pop);
-}
+// while (!stack1.isEmpty()){
+//   stack2.push(stack1.pop);
+// }
 console.log('stack2', stack2);
 module.exports = PseudoQueue;
 
 
 
 //Your queue isn't returning FIFO values,
-//instantiate 2 stacks in this files and push the values of original
+//instantiate 2 stacks in this files and 
+//push the values of original
 //stack into a new stack to reverse them.
