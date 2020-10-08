@@ -1,20 +1,24 @@
 'use strict';
 const util = require('util');
-// const QQ = require('./queue-with-stacks');
+const Queue = require('./queues');
 const Stack = require('./stacks');
 
-// let queue = new QQ();
+let queue = new Queue;
 
-// queue.enqueue(1);
-// queue.enqueue(2);
-// queue.enqueue(3);
-// queue.enqueue(4);
-// queue.enqueue(5);
+queue.enqueue(1);
+queue.enqueue(2);
+queue.enqueue(3);
+queue.enqueue(4);
+queue.enqueue(5);
 
-// queue.dequeue();
+queue.dequeue();
+queue.dequeue();
+queue.dequeue();
+queue.dequeue();
+queue.dequeue();
 
-// queue.peek();
-// console.log(util.inspect(queue, {showHidden:false, depth: null}));
+queue.peek();
+console.log(util.inspect(queue, {showHidden:false, depth: null}));
 
 let stack1 = new Stack;
 
