@@ -1,18 +1,10 @@
 'use strict';
 
 
-class TreeNode {
-  constructor(value){
-    this.value = value;
-    this.left = null;
-    this.right = null;
-  }
-}
-
 const BinaryTree = require('./tree');
 
-let rootnode = new TreeNode(20);
-let binaryTree = new BinaryTree(rootnode);
+// let rootnode = new TreeNode(20);
+let binaryTree = new BinaryTree();
 
 
 binaryTree.add(12);

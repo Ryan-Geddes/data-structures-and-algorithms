@@ -75,25 +75,41 @@ class BinarySearchTree extends BinaryTree {
     super(node);
   }
 
-  add(value) {
+  add(value){
+    this.insert(value, this.root);
+  }
 
+  insert(value, node) {
+    
     let newNode = new TreeNode(value);
 
-    const _walk = (node) => {
-      let current = node;
-      if (newNode.value > current.value && !node.right)
-        {node.right = newNode;}
-      if (newNode.value > current.value && node.right)
-        {_walk(node.right);}
+    if(!this.root){
+      this.root=newNode;
+      return;
+    }
 
-      if (newNode.value < current.value && !node.left)
-        {node.left = newNode;}
-      if (newNode.value < current.value && node.left)
-        {_walk(node.left);}
+    if(node.value === value){
+      return;
+    }
 
-    };
-    _walk(this.root);
+    if(node.value > value ){
+      if(!node.right){
+        node.right = newNode;
+        return;
+      }else{
+        this.insert(value, node.right);
+      }
+    }
 
+    if(node.value < value ){
+      if(!node.left){
+        node.left = newNode;
+        return;
+      }else{
+        this.insert(value, node.left);
+      }
+    }
+    
   }
 
   contains(value) {
@@ -113,6 +129,16 @@ class BinarySearchTree extends BinaryTree {
     }else{
       return false;
     }
+  }
+
+
+  containsIterative(value) {
+    //  accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+    //REDO THIS ITERATIVELY
+  }
+
+  addIterative(value) {
+    //REDO THIS ITERATIVELY
   }
 }
 
