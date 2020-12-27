@@ -20,7 +20,7 @@ const Stack = require('./stacks.js');
 
 //if stack is not empty, FAIL
 
-let test = '[[fart]]{}'
+let test = '[[testing123]]{}';
 
 function multiBracketValidation(input) {
 
