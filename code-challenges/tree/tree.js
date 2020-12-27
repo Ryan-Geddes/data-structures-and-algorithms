@@ -131,6 +131,27 @@ class BinarySearchTree extends BinaryTree {
     }
   }
 
+  findMaxIter(){
+    if(this.root){
+      let current = this.root;
+      while(current.right){
+        current = current.right;
+      }
+      return current.value;
+    }else{
+      return 'BST empty';
+    }
+  }
+
+  findMaxRecur(node){
+    //base case:
+    if(!node.right){
+      return node.value;
+    }
+    node = node.right;
+    return this.findMaxRecur(node);
+  }
+
 
   containsIterative(value) {
     //  accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
