@@ -29,4 +29,5 @@ When you finish the assignment each day, make a new pull request from your daily
 [Challenge 1 - Array Reverse](./arrayShift/README.md)
 [Challenge 2 - Array Shift](./arrayShift/README.md)
 [Challenge 3 - TBD](./arrayShift/README.md)
+[Challenge 12 - Fifo Animal Shleter](./fifoAnimalShelter/README.md)
 [Challenge 16 - Max Val in BST](./tree/README.md)
