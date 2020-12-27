@@ -1,39 +1,60 @@
 'use strict';
 
 const util = require('util');
-const LL = require('../linkedList/linked-list');
-let list = new LL();
 
-
-class Stack {
-
-  constructor() {
-    this.container = list;
-  }
-
-  push(item) {
-    this.container.append(item);
-  }
-
-  pop() {
-    let temp = this.container.head.value;
-    let current = this.container.head.next;
-    this.container.head = current;
-    console.log('popped item', temp);
-    return(temp);
-  }
-
-  peek() {
-    console.log('top of stack:', this.container.head.value);
-    return this.container.head.value;
+class Node {
+  constructor(value) {
+    this.value = value;
+    this.next = null;
   }
 }
 
+class Stack {
 
-const stack1 = new Stack;
-const stack2 = new Stack;
+  constructor(node = null) {
+    this.top = node;
+  }
 
+  push(value) {
+    let node = new Node(value);
+    if (!this.top) {
+      this.top = node;
+    } else {
+      node.next = this.top;
+      this.top = node;
+    }
+  }
 
+  pop() {
+    if(this.top){
+      let temp = this.top.value;
+      this.top = this.top.next;
+      // console.log('popped value:', temp);
+      return(temp);
+    }else{
+      console.log('STACK IS EMPTY');
+      return undefined;
+    }
+  }
+
+  peek() {
+    if(this.top){
+      // console.log('top of stack:', this.top.value);
+      return this.top.value;}
+    else{
+      console.log('STACK IS EMPTY');
+      return undefined;
+    }
+  }
+
+  isEmpty() {
+    if (!this.top) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+}
 
 
 module.exports = Stack;

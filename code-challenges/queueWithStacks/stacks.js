@@ -29,7 +29,7 @@ class Stack {
     if(this.top){
       let temp = this.top.value;
       this.top = this.top.next;
-      console.log('popped value:', temp);
+      // console.log('popped value:', temp);
       return(temp);
     }else{
       console.log('STACK IS EMPTY');
@@ -39,7 +39,7 @@ class Stack {
 
   peek() {
     if(this.top){
-      console.log('top of stack:', this.top.value);
+      // console.log('top of stack:', this.top.value);
       return this.top.value;}
     else{
       console.log('STACK IS EMPTY');
