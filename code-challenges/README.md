@@ -31,3 +31,4 @@ When you finish the assignment each day, make a new pull request from your daily
 [Challenge 3 - TBD](./arrayShift/README.md)
 [Challenge 12 - Fifo Animal Shleter](./fifoAnimalShelter/README.md)
 [Challenge 16 - Max Val in BST](./tree/README.md)
+[Challenge 17 - breadth first traversal](./breadth-first/README.md)
