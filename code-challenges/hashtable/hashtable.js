@@ -106,8 +106,12 @@ class Hashmap {
     
   }
 
-  contains(key) {
-    // takes in the key and returns a boolean, indicating if the key exists in the table already.
+  has(key) {
+    let hash = this.hash(key); 
+    //navigate to that index
+    let list = this.storage[hash];
+    //traverse through LL and return key value pair
+    return(list.includes(key));
   }
 
   hash(key) {
@@ -128,3 +132,6 @@ hashmap.set('bob', 'builder');
 hashmap.storage.forEach((item, idx) => {
   item.get();
 })
+
+
+module.exports = Hashmap;

@@ -33,3 +33,4 @@ When you finish the assignment each day, make a new pull request from your daily
 - [Challenge 16 - Max Val in BST](./tree/README.md)
 - [Challenge 17 - breadth first traversal](./breadth-first/README.md)
 - [Challenge 18 - fizzbuzz tree](./fizzbuzz-tree/README.md)
+- [Challenge 31 - repeated words](./repeatedWord/README.md)
