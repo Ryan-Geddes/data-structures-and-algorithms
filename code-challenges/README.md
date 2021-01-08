@@ -25,3 +25,13 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 ## Assignment Submission
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
+
+- [Challenge 1 - Array Reverse](./arrayShift/README.md)
+- [Challenge 2 - Array Shift](./arrayShift/README.md)
+- [Challenge 3 - TBD](./arrayShift/README.md)
+- [Challenge 7 - TBD](./ll-kth-from-end/README.md)
+- [Challenge 12 - Fifo Animal Shleter](./fifoAnimalShelter/README.md)
+- [Challenge 16 - Max Val in BST](./tree/README.md)
+- [Challenge 17 - breadth first traversal](./breadth-first/README.md)
+- [Challenge 18 - fizzbuzz tree](./fizzbuzz-tree/README.md)
+- [Challenge 31 - repeated words](./repeatedWord/README.md)
