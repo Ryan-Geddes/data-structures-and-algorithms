@@ -30,6 +30,7 @@ When you finish the assignment each day, make a new pull request from your daily
 - [Challenge 2 - Array Shift](./arrayShift/README.md)
 - [Challenge 3 - Binary Search](./array-binary-search/README.md)
 - [Challenge 7 - TBD](./ll-kth-from-end/README.md)
+- [Challenge 11 - queue with 2 stacks](./queue-with-stacks/README.md)
 - [Challenge 12 - Fifo Animal Shleter](./fifoAnimalShelter/README.md)
 - [Challenge 16 - Max Val in BST](./tree/README.md)
 - [Challenge 17 - breadth first traversal](./breadth-first/README.md)
