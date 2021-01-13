@@ -28,10 +28,11 @@ When you finish the assignment each day, make a new pull request from your daily
 
 - [Challenge 1 - Array Reverse](./arrayShift/README.md)
 - [Challenge 2 - Array Shift](./arrayShift/README.md)
-- [Challenge 3 - TBD](./arrayShift/README.md)
+- [Challenge 3 - Binary Search](./array-binary-search/README.md)
 - [Challenge 7 - TBD](./ll-kth-from-end/README.md)
 - [Challenge 12 - Fifo Animal Shleter](./fifoAnimalShelter/README.md)
 - [Challenge 16 - Max Val in BST](./tree/README.md)
 - [Challenge 17 - breadth first traversal](./breadth-first/README.md)
 - [Challenge 18 - fizzbuzz tree](./fizzbuzz-tree/README.md)
 - [Challenge 31 - repeated words](./repeatedWord/README.md)
+- [Challenge 32 - tree intersection](./tree-intersection/README.md)
