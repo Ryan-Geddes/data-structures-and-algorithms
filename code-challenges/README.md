@@ -26,12 +26,20 @@ You can see the results of your tests online in the "Actions" tab of your reposi
 
 When you finish the assignment each day, make a new pull request from your daily challenge branch to your master branch and submit the PR URL in Canvas. You can submit a link to a pull request even if the pull request is closed.
 
-- [Challenge 1 - Array Reverse](./arrayShift/README.md)
+- [Challenge 1 - Array Reverse](./code-challenge-01/README.md)
 - [Challenge 2 - Array Shift](./arrayShift/README.md)
-- [Challenge 3 - TBD](./arrayShift/README.md)
-- [Challenge 7 - TBD](./ll-kth-from-end/README.md)
+- [Challenge 3 - Binary Search](./array-binary-search/README.md)
+- [Challenge 7 - LL kth from end](./ll-kth-from-end/README.md)
+- [Challenge 8 - LL Zip](./ll-zip/README.md)
+- [Challenge 10 - stack and queue implementation](./queue-with-stacks/README.md)
+- [Challenge 11 - queue with 2 stacks](./queue-with-stacks/README.md)
 - [Challenge 12 - Fifo Animal Shleter](./fifoAnimalShelter/README.md)
+- [Challenge 13 - multi brackets](./multi-bracket-validation/README.md)
+- [Challenge 14 - mock-interview - stack max](./fifoAnimalShelter/README.md)
+- Challenge 15 - Binary tree and BST implementation
 - [Challenge 16 - Max Val in BST](./tree/README.md)
 - [Challenge 17 - breadth first traversal](./breadth-first/README.md)
 - [Challenge 18 - fizzbuzz tree](./fizzbuzz-tree/README.md)
+- Challenge 19 - mock interview w john
 - [Challenge 31 - repeated words](./repeatedWord/README.md)
+- [Challenge 32 - tree intersection](./tree-intersection/README.md)
