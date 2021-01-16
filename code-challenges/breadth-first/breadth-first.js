@@ -91,7 +91,7 @@ class BST {
       if(current.right){
         q.nq(current.right);
       }
-      q.dq()
+      q.dq();
       current = q.peek();
     }
     return output;

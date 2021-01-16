@@ -12,6 +12,24 @@ class Node {
   }
 }
 
+class Queue{
+  constructor(){
+    this.items = [];
+  }
+
+  nq(value){
+    return this.items.push(value);
+  }
+
+  dq(){
+    return this.items.shift();
+  }
+
+  peek(){
+    return this.items[this.items.length-1];
+  }
+}
+
 class Tree{
   constructor(node){
     this.root = node;
@@ -60,7 +78,7 @@ function treeIntersectionRecursive(tree1, tree2){
     table.set(node.value);
     if(node.left){_loadMap(node.left);}
     if(node.right){_loadMap(node.right);}
-  }
+  };
   _loadMap(tree1.root);
 
   const _checkMap = (node)=>{
@@ -69,7 +87,7 @@ function treeIntersectionRecursive(tree1, tree2){
     }
     if(node.left){_checkMap(node.left);}
     if(node.right){_checkMap(node.right);}
-    }
+  };
   
   _checkMap(tree2.root);
 
@@ -84,7 +102,40 @@ function treeIntersectionIterative(tree1, tree2){
   //iterate through tree2
   //check value against hash table at every node
   //return accordingly
+  let table = new Map();
+  let output = [];
+  let q = new Queue;
 
+  let current = tree1.root;
+  while(current){
+    if(current.left){
+      q.nq(current.left);
+    }
+    if(current.right){
+      q.nq(current.right);
+    }
+    if(table.has(current.value)){
+      current = q.dq();
+    }else{
+      table.set(current.value, current.value);
+      current = q.dq();
+    }
+  }
+
+  current = tree2.root;
+  while(current){
+    if(current.left){
+      q.nq(current.left);
+    }
+    if(current.right){
+      q.nq(current.right);
+    }
+    if(table.has(current.value)){
+      output.push(current.value);
+    }
+    current = q.dq();
+  }
+  return output;
 }
 
 let tree1 = new Tree;
@@ -96,10 +147,10 @@ tree1.add(3)
 tree1.add(69)
 tree1.add(5)
 
-tree2.add()
-tree2.add()
-tree2.add()
-tree2.add()
-tree2.add();
+tree2.add(6)
+tree2.add(7)
+tree2.add(8)
+tree2.add(69)
+tree2.add(9);
 
-console.log(JSON.stringify(treeIntersectionRecursive(tree1, tree2)));
+console.log(JSON.stringify(treeIntersectionIterative(tree1, tree2)));
